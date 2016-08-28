@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Welcome to CSCI 379 - Schedule</title>
@@ -12,7 +13,7 @@
     </style>
     <script>
         function highlightNextClass(today) {
-            var start = new Date("2016/02/01 23:59:59 EST");
+            var start = new Date("2016/08/28 23:59:59 EST");
             var dates = [];
             var oneday = 1000*3600*24;
             var i;
@@ -33,205 +34,200 @@
         };
     </script>
 </head>
+
 <body onload="highlightNextClass(new Date())">
-<!-- Fixed navbar -->
-<div class="pos-f-t">
-    <div class="collapse" id="navbar-header">
-        <div class="container bg-inverse p-a-1">
-            <h3>Collapsed content</h3>
-            <p>Toggleable via the navbar brand.</p>
-        </div>
-    </div>
-    <nav class="navbar navbar-light navbar-fixed-top bg-faded">
-        <div class="container">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
-                    data-target="#exCollapsingNavbar2">
-                &#9776;
-            </button>
-            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-                <a class="navbar-brand" href="#">CSCI 379 Computer Networks</a>
-                <ul class="nav navbar-nav pull-xs-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="syllabus.html">Syllabus</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="schedule.html">Schedule<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="policy.html">Policies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources.html">Resources</a>
-                    </li>
-                </ul>
+    <!-- Fixed navbar -->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbar-header">
+            <div class="container bg-inverse p-a-1">
+                <h3>Collapsed content</h3>
+                <p>Toggleable via the navbar brand.</p>
             </div>
         </div>
-    </nav>
-</div>
-
-<div class="container">
-    <div class="row">
-        <table class="table table-stripped">
-            <tr>
-                <td>Date</td>
-                <td>Topic</td>
-                <td>Readings</td>
-            </tr>
-            <tr>
-                <td>02/01 (Mon)</td>
-                <td rowspan="4">Introduction</td>
-                <td rowspan="4">Kurose & Ross, Chap. 1</td>
-            </tr>
-            <tr>
-                <td>02/03 (Wed)</td>
-            </tr>
-            <tr>
-                <td>02/08 (Mon)</td>
-            </tr>
-            <tr>
-                <td>02/10 (Wed)</td>
-            </tr>
-            <tr>
-                <td>02/15 (Mon)</td>
-                <td>No class - President's day</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>02/17 (Wed)</td>
-                <td rowspan="5">Application Layer</td>
-                <td rowspan="5">Kurose & Ross, Chap. 2</td>
-            </tr>
-            <tr>
-                <td>02/22 (Mon)</td>
-                
-            </tr>
-            <tr>
-                <td>02/24 (Wed)</td>
-                
-            </tr>
-            <tr>
-                <td>02/29 (Mon)</td>
-                
-            </tr>
-            <tr>
-                <td>03/02 (Wed)</td>
-
-            </tr>
-            <tr>
-                <td>03/07 (Mon)</td>
-                <td rowspan="4">Transport Layer</td>
-                <td rowspan="4">Kurose & Ross, Chap. 3</td>
-            </tr>
-            <tr>
-                <td>03/09 (Wed)</td>
-                
-            </tr>
-            <tr>
-                <td>03/14 (Mon)</td>
-                
-            </tr>
-            <tr>
-                <td>03/16 (Wed)</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>03/21 (Mon)</td>
-                
-            </tr>
-            <tr>
-                <td>03/23 (Wed)</td>
-                <td>No Class - Follow Friday Schedule</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>03/28 (Mon)</td>
-                <td>Midterm Exam</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>03/30 (Wed)</td>
-                <td rowspan="5">Network Layer</td>
-                <td rowspan="5">Kurose & Ross, Chap. 4</td>
-            </tr>
-            <tr>
-                <td>04/04 (Mon)</td>
-            </tr>
-            <tr>
-                <td>04/06 (Wed)</td>
-            </tr>
-            <tr>
-                <td>04/11 (Mon)</td>
-                
-            </tr>
-            <tr>
-                <td>04/13 (Wed)</td>
-                
-            </tr>
-            <tr>
-                <td>04/18 (Mon)</td>
-                <td rowspan="2">Link Layer</td>
-                <td rowspan="2">Kurose & Ross, Chap. 5</td>
-            </tr>
-            <tr>
-                <td>04/20 (Wed)</td>
-            </tr>
-            <tr>
-                <td>04/25 (Mon)</td>
-                <td>No Class - Spring break</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>04/27 (Wed)</td>
-                <td>No Class - Spring break</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>05/02 (Mon)</td>
-                <td rowspan="2">Link Layer(Cont.)</td>
-                <td rowspan="2">Kurose & Ross, Chap. 5</td>
-                
-            </tr>
-            <tr>
-                <td>05/04 (Wed)</td>
-                
-            </tr>
-            <tr>
-                <td>05/09 (Mon)</td>
-                <td rowspan="2">Wireless Network</td>
-                <td rowspan="2">Kurose & Ross, Chap. 6</td>
-            </tr>
-            <tr>
-                <td>05/11 (Wed)</td>
-            </tr>
-            <tr>
-                <td>05/16 (Mon)</td>
-                <td rowspan="2">Network Security</td>
-                <td rowspan="2">Kurose & Ross, Chap. 8</td>
-            </tr>
-            <tr>
-                <td>05/18 (Wed)</td>
-            </tr>
-            <tr>
-                <td>05/23 (Mon)</td>
-                <td>No Class</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>05/25 (Wed)</td>
-                <td>Final Exam</td>
-                <td></td>
-            </tr>
-        </table>
+        <nav class="navbar navbar-light navbar-fixed-top bg-faded">
+            <div class="container">
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                &#9776;
+            </button>
+                <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                    <a class="navbar-brand" href="#">CSCI 379 Computer Networks</a>
+                    <ul class="nav navbar-nav pull-xs-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="syllabus.html">Syllabus</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="schedule.html">Schedule<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="policy.html">Policies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 
-</div>
+    <div class="container">
+        <div class="row">
+            <table class="table table-stripped">
+                <tr>
+                    <td>Date</td>
+                    <td>Topic</td>
+                    <td>Readings</td>
+                </tr>
+                <tr>
+                    <td>Class#1, 08/29 (Mon)</td>
+                    <td rowspan="2">Introduction</td>
+                    <td rowspan="2">Kurose & Ross, Chap. 1</td>
+                </tr>
+                <tr>
+                    <td>Class#2, 08/31 (Wed)</td>
+                </tr>
+                <tr>
+                    <td>Class#3, 09/05 (Mon)</td>
+                    <td><span>No class - Labor Day</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Class#4, 09/07 (Wed)</td>
+                    <td rowspan="2">Introduction(cont.)</td>
+                    <td rowspan="2">Kurose & Ross, Chap. 1</td>
+                </tr>
+                <tr>
+                    <td>Class#5, 09/12 (Mon)</td>
+                </tr>
+                <tr>
+                    <td>Class#6, 09/14 (Wed)</td>
+                    <td rowspan="5">Application Layer</td>
+                    <td rowspan="5">Kurose & Ross, Chap. 2</td>
+                </tr>
+                <tr>
+                    <td>Class#7, 09/19 (Mon)</td>
+                </tr>
+                <tr>
+                    <td>Class#8, 09/21 (Wed)</td>
+                </tr>
+                <tr>
+                    <td>Class#9, 09/26 (Mon)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#10, 09/28 (Wed)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#11, 10/03 (Mon)</td>
+                    <td><span>No class</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Class#12, 10/05 (Wed)</td>
+                    <td rowspan="2">Transport Layer</td>
+                    <td rowspan="2">Kurose & Ross, Chap. 3</td>
+                </tr>
+                <tr>
+                    <td>Class#13, <del>10/10 (Mon)</del>10/06 (Thu)</td>
+                </tr>
+                <tr>
+                    <td>Class#14, 10/12 (Wed)</td>
+                    <td><span>No class</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Class#15, 10/17 (Mon)</td>
+                    <td rowspan="2">Transport Layer(cont.)</td>
+                    <td rowspan="2">Kurose & Ross, Chap. 3</td>
+                </tr>
+                <tr>
+                    <td>Class#16, 10/19 (Wed)</td>
+                </tr>
+                <tr>
+                    <td>Class#17, 10/24 (Mon)</td>
+                    <td>Midterm Exam</td>
+                    <td></td>              
+                </tr>
+                <tr>
+                    <td>Class#18, 10/26 (Wed)</td>
+                    <td rowspan="4">Network Layer</td>
+                    <td rowspan="4">Kurose & Ross, Chap. 4</td>
+                </tr>
+                <tr>
+                    <td>Class#19, 10/31 (Mon)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#20, 11/02 (Wed)</td>
+                   
+                </tr>
+                <tr>
+                    <td>Class#21, 11/07 (Mon)</td>
+                </tr>
+                <tr>
+                    <td>Class#22, 11/09 (Wed)</td>
+                    <td rowspan="4">Link Layer</td>
+                    <td rowspan="4">Kurose & Ross, Chap. 5</td>
+                </tr>
+                <tr>
+                    <td>Class#23, 11/14 (Mon)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#24, 11/16 (Wed)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#25, 11/21 (Mon)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#26, 11/23 (Wed)</td>
+                    <td rowspan="3">Wireless Network</td>
+                    <td rowspan="3">Kurose & Ross, Chap. 6</td>
+                </tr>
+                <tr>
+                    <td>Class#27, 11/28 (Mon)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#28, 11/30 (Wed)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#29, 12/05 (Mon)</td>
+                    <td rowspan="3">Network Security</td>
+                    <td rowspan="3">Kurose & Ross, Chap. 8</td>
+                </tr>
+                <tr>
+                    <td>Class#30, 12/07 (Wed)</td>
+                    
+                </tr>
+                <tr>
+                    <td>Class#31, 12/12 (Mon)</td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>Class#32, 12/14 (Wed)</td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>Class#33, 12/19 (Mon)</td>
+                    <td>Final Exam</td>
+                    <td></td>
+                </tr>
+            </table>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/tether.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
