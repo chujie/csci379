@@ -14,6 +14,7 @@
     <script>
         function highlightNextClass(today) {
             var start = new Date("2017/01/30 23:59:59 EST");
+            var extra = new Date("2017/04/20 23:59:59 EST");
             var dates = [];
             var oneday = 1000*3600*24;
             var i;
@@ -23,6 +24,8 @@
                 dates.push(nextclass);
                 start = new Date(start.getTime()+oneday*7);
             }
+            dates.push(extra);
+            dates.sort(function(a,b){return a-b});
 
             for(i=0; i<dates.length; i++) {
                 if(today.getTime() < dates[i].getTime()) {
