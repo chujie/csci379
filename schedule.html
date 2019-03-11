@@ -13,8 +13,9 @@
     </style>
     <script>
         function highlightNextClass(today) {
-            var start = new Date("2018/08/27 23:59:59 EST");
-            var extra = new Date("2018/12/26 23:59:59 EST");
+            var start = new Date("2019/01/28 23:59:59 EST");
+            var pre_start = new Date("2019/01/27 23:59:59 EST");
+            var end = new Date("2019/05/23 23:59:59 EST")
             var dates = [];
             var oneday = 1000*3600*24;
             var i;
@@ -24,12 +25,13 @@
                 dates.push(nextclass);
                 start = new Date(start.getTime()+oneday*7);
             }
-            dates.push(extra);
+            dates.push(pre_start);
+            dates.push(end);
             dates.sort(function(a,b){return a-b});
 
             for(i=0; i<dates.length; i++) {
                 if(today.getTime() < dates[i].getTime()) {
-                    $(".table tr:nth-of-type("+(i+2)+") td:first-of-type").prepend("&rarr; ").addClass("text-primary");
+                    $(".table tr:nth-of-type("+(i+1)+") td:first-of-type").prepend("&rarr; ").addClass("text-primary");
                     return;
                 }
             }
@@ -130,20 +132,22 @@
               	</tr>
               	<tr>
               		<td>Class#11, 03/04 (Mon)</td>
-                  <td rowspan="6">Transport Layer</td>
-                  <td rowspan="6">Kurose & Ross, Chap. 3</td>
+                  <td>No Class - Class canceled</td>
+                  <td></td>
               	</tr>
               	<tr>
               		<td>Class#12, 03/06 (Wed)</td>
 
+                  <td rowspan="2">Application Layer</td>
+                  <td rowspan="2">Kurose & Ross, Chap. 2</td>
               	</tr>
               	<tr>
               		<td>Class#13, 03/11 (Mon)</td>
-
               	</tr>
               	<tr>
               		<td>Class#14, 03/13 (Wed)</td>
-
+                  <td rowspan="6">Transport Layer</td>
+                  <td rowspan="6">Kurose & Ross, Chap. 3</td>
               	</tr>
               	<tr>
               		<td>Class#15, 03/18 (Mon)</td>
@@ -159,21 +163,21 @@
               	</tr>
               	<tr>
               		<td>Class#18, 03/27 (Wed)</td>
+
+              	</tr>
+              	<tr>
+              		<td>Class#19, 04/01 (Mon)</td>
+
+              	</tr>
+              	<tr>
+              		<td>Class#20, 04/03 (Wed)</td>
                   <td>Midterm Exam</td>
                   <td></td>
               	</tr>
               	<tr>
-              		<td>Class#19, 04/01 (Mon)</td>
-                  <td rowspan="6">Network Layer</td>
-                  <td rowspan="6">Kurose & Ross, Chap. 4&5</td>
-              	</tr>
-              	<tr>
-              		<td>Class#20, 04/03 (Wed)</td>
-
-              	</tr>
-              	<tr>
               		<td>Class#21, 04/08 (Mon)</td>
-
+                  <td rowspan="4">Network Layer</td>
+                  <td rowspan="4">Kurose & Ross, Chap. 4&5</td>
               	</tr>
               	<tr>
               		<td>Class#22, 04/10 (Wed)</td>
@@ -194,11 +198,12 @@
               	</tr>
               	<tr>
               		<td>Class#26, 04/24 (Wed)</td>
+
               	</tr>
               	<tr>
               		<td>Class#27, 04/29 (Mon)</td>
-                  <td rowspan="4">Link Layer</td>
-                  <td rowspan="4">Kurose & Ross, Chap. 6</td>
+                  <td rowspan="2">Network Layer</td>
+                  <td rowspan="2">Kurose & Ross, Chap. 4&5</td>
               	</tr>
               	<tr>
               		<td>Class#28, 05/01 (Wed)</td>
@@ -206,7 +211,8 @@
               	</tr>
               	<tr>
               		<td>Class#29, 05/06 (Mon)</td>
-
+                  <td rowspan="4">Link Layer</td>
+                  <td rowspan="4">Kurose & Ross, Chap. 6</td>
               	</tr>
               	<tr>
               		<td>Class#30, 05/08 (Wed)</td>
@@ -214,8 +220,7 @@
               	</tr>
               	<tr>
               		<td>Class#31, 05/13 (Mon)</td>
-                  <td rowspan="2">Wireless Network</td>
-                  <td rowspan="2">Kurose & Ross, Chap. 7</td>
+
               	</tr>
               	<tr>
               		<td>Class#32, 05/15 (Wed)</td>
